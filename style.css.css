@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* ✅ Vidéo de fond */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ✅ Navbar fixée */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* ✅ Overlay d’accueil */
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 60px;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px black;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slogan {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  color: #ccc;
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 1px;
+  animation: fadeInUp 2s ease-out;
+}
+
+/* ✅ Section Project */
+.project-section {
+  padding: 120px 30px;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.project-section h2 {
+  font-size: 36px;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+.project-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #00f0ff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 320px;
+  color: white;
+  text-align: left;
+}
+
+.project-card h3 {
+  color: #00f0ff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-card ul {
+  list-style-type: "✔ ";
+  padding-left: 20px;
+  line-height: 1.8;
+  color: #ccc;
+}
+.flip-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.flip-card {
+  background: transparent;
+  width: 320px;
+  height: 360px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #00f0ff;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  color: white;
+  text-align: left;
+}
+
+.flip-card-front h3,
+.flip-card-back h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #00f0ff;
+}
+
+.flip-card-front ul,
+.flip-card-back ul {
+  list-style-type: "✔ ";
+  padding-left: 20px;
+  line-height: 1.7;
+  color: #ccc;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+.contact-section {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 100px 30px;
+  text-align: center;
+  color: white;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00f0ff;
+}
+
+.contact-section p {
+  color: #ccc;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  padding: 12px 25px;
+  border: 2px solid #00f0ff;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.contact-links a:hover {
+  background-color: #00f0ff;
+  color: black;
+}

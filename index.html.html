@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CyberShield Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ✅ Vidéo de fond -->
+  <video autoplay muted loop id="bg-video">
+    <source src="videoplayback.webm" type="video/webm">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- ✅ Contenu par-dessus -->
+  <div class="overlay">
+    <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#project">PROJECT</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+      </ul>
+    </nav>
+    <h1>CyberShield</h1>
+  </div>
+
+  <!-- ✅ Slogan en bas -->
+  <p class="slogan">Your digital defense starts here.</p>
+
+  <!-- ✅ Section Project -->
+  <section id="project" class="project-section">
+    <h2>CyberShield Lab – Real Project Steps</h2>
+  
+    <div class="flip-container">
+  
+      <!-- Tools Card -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>🛠 Tools Used</h3>
+            <ul>
+              <li>Snort</li>
+              <li>Bettercap</li>
+              <li>Wireshark</li>
+              <li>Security Onion</li>
+              <li>Python & Bash</li>
+              <li>Nmap</li>
+            </ul>
+          </div>
+          <div class="flip-card-back">
+            <h3>🛠 Tools – Explanation</h3>
+            <ul>
+              <li>Snort: detects intrusion attempts</li>
+              <li>Bettercap: launches ARP poisoning & MITM</li>
+              <li>Wireshark: analyzes packets from attacks</li>
+              <li>Security Onion: stores logs and monitors</li>
+              <li>Python & Bash: automates response/blocking</li>
+              <li>Nmap: scans ports/services of targets</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Steps Card -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h3>📌 Steps Performed</h3>
+            <ul>
+              <li>1. Setup Kali & Target VM</li>
+              <li>2. MAC Spoofing</li>
+              <li>3. ARP poisoning</li>
+              <li>4. Snort Alerts</li>
+              <li>5. Auto-block IP</li>
+              <li>6. Logs with SO</li>
+            </ul>
+          </div>
+          <div class="flip-card-back">
+            <h3>📌 Step Details</h3>
+            <ul>
+              <li>Kali: attacker OS with tools</li>
+              <li>Target VM: victim machine (Windows 10)</li>
+              <li>MAC Spoofing: simulates identity theft</li>
+              <li>ARP Poisoning: redirects traffic to attacker</li>
+              <li>Snort: detects MITM and logs alert</li>
+              <li>SO: stores and visualizes the entire event</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  <!-- ✅ Section CONTACT -->
+<section id="contact" class="contact-section">
+  <h2>📩 Contact Me</h2>
+  <p>Feel free to connect with me through the platforms below:</p>
+
+  <div class="contact-links">
+    <a href="https://www.linkedin.com/in/belakehall-abdesalem-740385328/" target="_blank">LinkedIn</a>
+    <a href="https://github.com/Abdeslembellakehal" target="_blank">GitHub</a>
+    <a href="mailto:blksalem27@gmail.com">Gmail</a>
+  </div>
+</section>
+
+  
+
+</body>
+</html>
